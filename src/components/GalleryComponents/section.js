@@ -1,6 +1,7 @@
 "use client";
 import { useState } from "react";
 import styles from "./section.module.css";
+import Image from "next/image";
 
 const mediaItems = [
   { type: "image", src: "/gallery/car1.jpg" },
@@ -34,7 +35,7 @@ export default function Gallery() {
                 onMouseOut={(e) => !isMobile && e.target.pause()}
               />
             ) : (
-              <img src={item.src} className={styles.thumbnail} alt={`Gallery item ${index}`} />
+              <Image src={item.src} className={styles.thumbnail} alt={`Gallery item ${index}`} width={300} height={200} />
             )}
           </div>
         ))}

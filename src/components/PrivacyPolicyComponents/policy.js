@@ -7,7 +7,7 @@ export default function PrivacyPolicy() {
       <p className={styles.updated}>Last updated: June 4, 2025</p>
 
       <p className={styles.p}>
-        This website ("we", "our", or "us") respects your privacy. We do not collect, store,
+        This website (&quot;we&quot;, &quot;our&quot;, or &quot;us&quot;) respects your privacy. We do not collect, store,
         or share any personal information from users visiting our site.
       </p>
 
