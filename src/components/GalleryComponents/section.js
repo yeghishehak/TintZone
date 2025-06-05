@@ -48,7 +48,7 @@ export default function Gallery() {
             {selected.type === "video" ? (
               <video src={selected.src} controls autoPlay className={styles.popupMedia} />
             ) : (
-              <Image src={selected.src} alt="Popup" width={500} height={200} className={styles.popupMedia} />
+              <Image src={selected.src} alt="Popup" width={500} height={500} className={styles.popupMedia} />
             )}
           </div>
         </div>
