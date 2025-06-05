@@ -1,5 +1,6 @@
 .header {
     position: fixed;
+    margin-top: 0 !important;
     width: 100%;
     background: #f9f9f9;
     border-bottom: solid rgb(123, 123, 123) 1px;
