@@ -34,7 +34,7 @@ export default function Prices() {
 
                  <div className={styles.ceramicText}>
                      <h1>Ceramic Tinting</h1>
-                     <p>Ceramic window tint provides top-tier heat and UV rejection using advanced non-metallic, nano-ceramic particles. It offers superior clarity, doesn't interfere with electronics, and delivers maximum comfort, durability, and protection for vehicles, homes, or offices.</p>
+                     <p>Ceramic window tint provides top-tier heat and UV rejection using advanced non-metallic, nano-ceramic particles. It offers superior clarity, doesn&apos;t interfere with electronics, and delivers maximum comfort, durability, and protection for vehicles, homes, or offices.</p>
                      <p className={styles.priceName}>Price For a Window: $50</p>
                  </div>
             </div>
