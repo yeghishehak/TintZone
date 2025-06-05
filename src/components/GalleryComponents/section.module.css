@@ -78,7 +78,7 @@
 }
 
 .popupMedia {
-  width: auto !important;
+  width: 100% !important;
   height: auto;
   max-height: 80vh !important;
   border-radius: 10px;
