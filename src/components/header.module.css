@@ -1,0 +1,221 @@
+.header {
+    position: fixed;
+    width: 100%;
+    background: #f9f9f9;
+    border-bottom: solid rgb(123, 123, 123) 1px;
+    backdrop-filter: blur(10px);    
+    height: 120px;
+    z-index: 998;
+}
+
+.headerLeft {
+    position: relative;
+    top: 10px;
+    display: flex;
+    left: 30px;
+    gap: 20px;
+}
+
+.headerText {
+    text-wrap: nowrap;
+    font-family: "Audiowide", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    -webkit-text-stroke: 1px gold;
+    transform: translate(0, 5px);
+    text-shadow: 0px 0px 2px gold;
+    z-index: 802;
+}
+
+.logo {
+    position: relative;
+    box-shadow: 0px 0px 10px black;
+    z-index: 800;
+}
+
+.buttonsContainer {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-right: 30px;
+    bottom: 52px;
+}
+
+.menuBtn {
+    display: none;
+}
+
+.headingbuttons {
+    font-family: "Funnel Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    color: rgb(0, 0, 0);
+    font-size: 125%;
+    font-weight: 600;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: none;
+    transition: all 0.3s ease;
+    border-bottom: transparent 1px solid;
+}
+
+
+.buttonsContainer .headingbuttons::before {
+    content: '';
+    display: block;
+    position: relative;
+    height: 2px;
+    width: 60px 200px 300px;
+    background-color: black;
+    transition: all 0.4s ease;
+    top: 28px;
+    right: 0;
+    transform: scaleX(0);
+}
+
+.buttonsContainer .headingbuttons:hover::before {
+    transform: scaleX(1);
+}
+
+.buttonsContainer .headingbuttons:hover {
+    color: gold;
+    cursor: pointer;
+}
+
+@media (min-width: 1734px) {
+    .buttonsContainer {
+        margin-right: 40px;
+    }
+}
+
+@media (max-width: 893px) {
+    .buttonsContainer .headingbuttons::before {
+        display: none;
+    }
+    
+    .headingbuttons {
+        font-size: 120%;
+        transition: none;
+    }
+
+    .menuContainerHidden {
+        visibility: hidden;
+        position: fixed;
+        background-color: rgba(255, 255, 255, 1);
+        box-shadow: 0px 1px 2px black;
+        z-index: 1;
+        height: 100px;
+        width: 100vw;
+        right: 0px;
+        top: 115px;
+        z-index: 999;
+    }
+
+    .menuContainerVisible {
+        visibility: visible;
+        position: fixed;
+        background-color: rgba(255, 255, 255, 1);
+        box-shadow: 0px 1px 2px black;
+        z-index: 1;
+        height: 100px;
+        width: 100vw;
+        right: 0px;
+        top: 120px;
+        z-index: 999;
+    }
+
+    .menuBtn {
+        visibility: visible;
+        display: block;
+        position: fixed;
+        right: 20px;
+        top: 47px;
+        color: black;
+        transform: scale(3);
+        background-color: transparent;
+        border: none;
+        outline: none;
+    }
+
+    .buttonsContainer {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        left: 15px;
+        top: 40px;
+        gap: 20px;
+    }
+}
+
+@media (max-width: 690px) {
+    .headingbuttons {
+        font-size: 1rem;
+    }
+}
+
+
+@media (max-width: 466px) {
+    .headerLeft {
+        transform: translate(-70px) scale(0.7);
+    }
+
+    .buttonsContainer {
+        gap: 5px;
+    }
+
+    .headingbuttons {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 316px) {
+    .headerLeft {
+        transform: scale(0.5);
+        left: -50px;
+    }
+
+    .buttonsContainer {
+        top: 15px;
+        gap: 5px;
+    }
+
+    .headingbuttons {
+        font-size: 0.7rem;
+    }
+
+    .menuContainerHidden {
+        visibility: hidden;
+        position: fixed;
+        background-color: rgba(255, 255, 255, 1);
+        box-shadow: 0px 1px 2px black;
+        z-index: 1;
+        height: 50px;
+        width: 100vw;
+        right: 0px;
+        top: 105px;
+        z-index: 1;
+    }
+
+    .menuContainerVisible {
+        visibility: visible;
+        position: fixed;
+        background-color: rgba(255, 255, 255, 1);
+        box-shadow: 0px 1px 2px black;
+        z-index: 1;
+        height: 50px;
+        width: 100vw;
+        right: 0px;
+        top: 105px;
+        z-index: 1;
+    }
+}
+
+@media (max-width: 282px) {
+    .headingbuttons {
+        font-size: 0.5rem;
+    }
+}

@@ -1,0 +1,74 @@
+.pricesHeading {
+    font-family: 'Audiowide', sans-serif;
+    font-weight: 600;
+    font-size: 250%;
+    position: relative;
+    top: 150px;
+    text-align: center;
+    margin: 0;
+}
+
+.carbonDiv, .ceramicDiv {
+    margin-top: 200px;
+    position: relative;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    border-radius: 20px;
+    
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.ceramicDiv {
+    margin-top: 40px;
+}
+
+
+.carbonText, .ceramicText {
+    width: 700px;
+}
+
+.carbonDiv h1, .ceramicDiv h1 {
+    font-family: "Audiowide", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.carbonDiv h1, .ceramicDiv h1, .carbonDiv p, .ceramicDiv p {
+    color: white;
+    margin-right: 20px;
+}
+
+.priceName {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+}
+
+.carbonImage, .ceramicImage {
+    transform: translate(-30px, 0);
+}
+
+@media (max-width: 1039px) {
+    .carbonImage, .ceramicImage {
+        transform: translate(-10px, 0);
+    }
+    .carbonText, .ceramicText {
+        text-align: center;
+    }
+
+    .carbonDiv h1, .carbonDiv p, .ceramicDiv h1, .ceramicDiv p {
+        margin-right: 0;
+    }
+
+
+    .carbonDiv p, .ceramicDiv p {
+        padding: 10px;
+    }
+}
+
+@media (max-width: 206px) {
+    .carbonImage {
+        transform: translate(-7px, 0) scale(0.7);
+    }
+}

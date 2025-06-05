@@ -1,0 +1,80 @@
+.section2Div {
+    margin-top: 250px;
+}
+
+.ourAdvantagesContainer {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+@media (max-width: 1200px) {
+    .ourAdvantagesContainer {
+        width: 100%;
+    }
+}
+
+.ourAdvantagesText {
+    opacity: 0;
+    transform: translateY(5%);
+    font-family: "Audiowide", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 230%;
+    text-align: center;
+    transition: all 0.5s ease;
+}
+
+.ourAdvantagesTextSlideIn {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.advantage {
+    opacity: 0;
+    transform: translateY(5%);
+    text-align: center;
+    width: 300px;
+    height: 300px;
+    padding: 30px;
+    background-color: rgb(255, 252, 47);
+    margin: 10px;
+    border-radius: 20px;
+    transition: all 0.5s ease;
+}
+
+@media (max-width: 370px) {
+    .ourAdvantagesText {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 288px) {
+    .advantage {
+        height: auto;
+    }
+}
+
+.advantage:hover {
+    background-color: gold;
+    cursor: pointer;
+    box-shadow: 0px 4px 20px 10px rgba(0, 0, 0, 0.2);
+}
+
+.advantageSlideIn {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+.advantage h1 {
+    font-family: 'Poppins', sans-serif;
+}
+
+.advantage p {
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+}
