@@ -15,6 +15,7 @@
 
 
 .noPadding {
+  min-height: unset !important;
   padding: 0 !important;
 }
 
