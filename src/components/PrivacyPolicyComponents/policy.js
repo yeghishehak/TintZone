@@ -29,7 +29,7 @@ export default function PrivacyPolicy() {
         or privacy practices. Please read their privacy policies separately.
       </p>
 
-      <h2 className={styles.h2}>4. Children's Privacy</h2>
+      <h2 className={styles.h2}>4. Children&apos;s Privacy</h2>
       <p className={styles.p}>
         This website is not intended for children under the age of 13. We do not knowingly collect
         any information from minors.
