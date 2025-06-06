@@ -91,7 +91,8 @@
 
 .footerRights {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
     font-family: 'Verdana', sans-serif;
     font-size: 80%;
     width: 100%;
@@ -106,96 +107,20 @@
     margin: 0;
 }
 
-@media (max-width: 879px) {
-    .rightsH1 {
-        font-size: 120%;
-    }
+.rightsTerms {
+    color: black;
+    margin-top: 30px;
+    text-decoration: transparent;
+    transition: all 0.3s ease;
 }
 
-@media (max-width: 669px) {
-    .rightsH1 {
-        font-size: 90%;
-    }
-
-    .rightsLink {
-        margin-top: 0;
-    }
+.rightsPrivacy {
+    color: black;
+    margin-top: 10px;
+    text-decoration: transparent;
+    transition: all 0.3s ease;
 }
 
-@media (max-width: 615px) {
-    .rightsH1 {
-        font-size: 50%;
-    }
-
-    .rightsLink {
-        font-size: 50%;
-    }
-}
-
-.rightsLink {
-    margin-top: 8px;
-    font-weight: 600;
-    position: absolute;
-    right: 0;
-    margin-right: 10px;
-}
-
-@media (max-width: 669px) {
-    .rightsH1 {
-        font-size: 90%;
-    }
-
-    .rightsLink {
-        margin-top: 4px;
-    }
-}
-
-@media (max-width: 615px) {
-    .rightsH1 {
-        font-size: 50%;
-    }
-
-    .rightsLink {
-        font-size: 50%;
-    }
-}
-
-@media (max-width: 430px) {
-    .rightsH1 {
-        transform: scale(0.9);
-    }
-
-    .rightsLink {
-        transform: scale(0.9);
-    }
-}
-
-@media (max-width: 370px) {
-    .rightsH1 {
-        transform: scale(0.7);
-    }
-
-    .rightsLink {
-        transform: scale(0.7);
-    }
-}
-
-@media (max-width: 310px) {
-    .rightsH1 {
-        transform: scale(0.5);
-    }
-
-    .rightsLink {
-        transform: scale(0.5);
-    }
-}
-
-@media (max-width: 293px) {
-    .rightsH1 {
-        font-size: 20%;
-    }
-
-    .rightsLink {
-        font-size: 20%;
-    }
+.rightsTerms:hover, .rightsPrivacy:hover {
+    text-decoration: 1px solid black underline;
 }

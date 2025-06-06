@@ -33,7 +33,7 @@ export default function Footer() {
                     <div className={styles.contactUs}>
                         <h2 className={styles.contactUsTitle}>Contact us</h2>
                         <p>Email: <a href="mailto:TintZone7@gmail.com">TintZone7@gmail.com</a></p>
-                        <p>Phone: <a href="tel:+1234567890">+1 (412) 401-2466</a></p>
+                        <p>Phone: <a href="tel:+17473337179">+1 (747) 333-7179</a></p>
                         <p>Address: <a href='https://maps.app.goo.gl/iw9MhzuLmRrgDKSt9'>Los Angeles, CA</a></p>
                     </div>
                 </div>
@@ -41,7 +41,8 @@ export default function Footer() {
 
             <div className={styles.footerRights}>
                 <h1 className={styles.rightsH1}>© 2025 Tint Zone. All rights reserved.</h1>
-                <Link href="/privacy-policy" className={styles.rightsLink}>Privacy Policy</Link>
+                <Link href="/terms-of-service" className={styles.rightsTerms}>Terms of Service</Link>
+                <Link href="/privacy-policy" className={styles.rightsPrivacy}>Privacy Policy</Link>
             </div>
         </footer>
     );
