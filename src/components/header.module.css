@@ -165,7 +165,7 @@
     }
 
     .buttonsContainer {
-        gap: 1px;
+        gap: 5px;
     }
 
     .headingbuttons {
@@ -173,7 +173,7 @@
     }
 }
 
-@media (max-width: 316px) {
+@media (max-width: 350px) {
     .headerLeft {
         transform: scale(0.5);
         left: -50px;
