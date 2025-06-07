@@ -38,13 +38,14 @@
     transform: translateY(5%);
     text-align: center;
     width: 300px;
-    height: 300px;
+    min-height: 300px;
     padding: 30px;
     background-color: rgb(255, 252, 47);
     margin: 10px;
     border-radius: 20px;
     transition: all 0.5s ease;
 }
+
 
 @media (max-width: 370px) {
     .ourAdvantagesText {
