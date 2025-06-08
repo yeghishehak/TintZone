@@ -40,7 +40,7 @@ export default function TermsOfUse() {
       <section className={styles.section}>
         <h2 className={styles.subheading}>4. Disclaimer</h2>
         <p className={styles.paragraph}>
-          The website and its contents are provided "as is" without warranties of any kind. We do not guarantee the accuracy, reliability, or completeness of any information provided.
+          The website and its contents are provided &quot;as is&quot; without warranties of any kind. We do not guarantee the accuracy, reliability, or completeness of any information provided.
         </p>
       </section>
 
