@@ -1,5 +1,5 @@
 "use client";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import styles from "./section.module.css";
 import Image from "next/image";
 
@@ -14,7 +14,13 @@ const mediaItems = [
 
 export default function Gallery() {
   const [selected, setSelected] = useState(null);
-  const isMobile = typeof window !== "undefined" && window.innerWidth < 768;
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      setIsMobile(window.innerWidth < 768);
+    }
+  }, []);
 
   return (
     <section className={styles.gallerySection}>
@@ -28,6 +34,7 @@ export default function Gallery() {
                 poster={item.poster}
                 muted
                 playsInline
+                controls={isMobile}
                 preload="metadata"
                 style={{ backgroundImage: `url(${item.poster})` }}
                 className={styles.thumbnail}
