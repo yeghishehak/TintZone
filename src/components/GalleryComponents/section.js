@@ -7,9 +7,9 @@ const mediaItems = [
   { type: "image", src: "/gallery/car1.jpg" },
   { type: "image", src: "/gallery/car2.jpg" },
   { type: "image", src: "/gallery/car3.jpg" },
-  { type: "video", src: "/gallery/carVideo1.mp4", poster: "/gallery/carVideo1.png" },
-  { type: "video", src: "/gallery/carVideo2.mp4", poster: "/gallery/carVideo2.png" },
-  { type: "video", src: "/gallery/carVideo3.mp4", poster: "/gallery/carVideo3.png" },
+  { type: "video", src: "/gallery/carVideo1.mp4", poster: "/gallery/carVideo1.jpg" },
+  { type: "video", src: "/gallery/carVideo2.mp4", poster: "/gallery/carVideo2.jpg" },
+  { type: "video", src: "/gallery/carVideo3.mp4", poster: "/gallery/carVideo3T.png" },
 ];
 
 export default function Gallery() {

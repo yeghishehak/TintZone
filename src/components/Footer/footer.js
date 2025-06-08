@@ -41,7 +41,7 @@ export default function Footer() {
 
             <div className={styles.footerRights}>
                 <h1 className={styles.rightsH1}>© 2025 Tint Zone. All rights reserved.</h1>
-                <Link href="/terms-of-service" className={styles.rightsTerms}>Terms of Service</Link>
+                <Link href="/terms-of-use" className={styles.rightsTerms}>Terms of Service</Link>
                 <Link href="/privacy-policy" className={styles.rightsPrivacy}>Privacy Policy</Link>
             </div>
         </footer>
