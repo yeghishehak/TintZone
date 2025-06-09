@@ -4,6 +4,8 @@ import { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
 import styles from './contactus.module.css';
 import { usePathname } from 'next/navigation';
+import sanitizeHtml from 'sanitize-html';
+import validator from 'validator';
 
 export default function ContactUs() {
   const pathname = usePathname();
@@ -12,8 +14,29 @@ export default function ContactUs() {
   const form = useRef();
   const [serviceType, setServiceType] = useState('');
 
+
+  const sanitizeInput = (input) =>
+    sanitizeHtml(input, {
+      allowedTags: [],
+      allowedAttributes: {},
+    }).trim();
+
   const sendEmail = (e) => {
     e.preventDefault();
+
+
+    if (!validator.isEmail(sanitizedData.user_email)) {
+      alert('Please enter a valid email address.');
+      return;
+    }
+
+
+    const tempForm = form.current;
+    for (let input of tempForm.elements) {
+      if (input.name && input.value) {
+        input.value = sanitizeInput(input.value);
+      }
+    }
 
     emailjs
       .sendForm(
@@ -26,6 +49,7 @@ export default function ContactUs() {
         () => {
           alert('Message sent successfully!');
           form.current.reset();
+          setServiceType(''); // reset select visibility
         },
         (error) => {
           alert('Failed to send message. Please try again.');
@@ -78,16 +102,16 @@ export default function ContactUs() {
             <option value="Other">Other</option>
           </select>
 
-        <input
+          <input
             className={styles.input}
             type="text"
             name="vehicle_model"
             placeholder="Vehicle Make & Model"
             required={serviceType === 'Vehicle'}
             style={{ display: serviceType === 'Vehicle' ? 'block' : 'none' }}
-        />
+          />
 
-        <input
+          <input
             className={styles.input}
             type="number"
             name="vehicle_year"
@@ -96,8 +120,7 @@ export default function ContactUs() {
             max={new Date().getFullYear()}
             required={serviceType === 'Vehicle'}
             style={{ display: serviceType === 'Vehicle' ? 'block' : 'none' }}
-        />
-
+          />
 
           <select className={styles.select} name="tint_type" defaultValue="" required>
             <option value="" disabled>
@@ -144,7 +167,9 @@ export default function ContactUs() {
             Book Appointment
           </button>
 
-          <h2 className={styles.h2}>Please enter correct data so we can receive it and answer you as soon as possible</h2>
+          <h2 className={styles.h2}>
+            Please enter correct data so we can receive it and answer you as soon as possible
+          </h2>
         </form>
 
         <div className={styles.feedback_container}>
