@@ -31,12 +31,12 @@ export default function Herosection() {
                     <h1 className={styles.tintzoneText}>Tint Zone</h1>
                     <p className={styles.tintzoneDescription}>At Tint Zone, we specialize in high-quality window tinting for cars, homes, and businesses—delivering comfort, privacy, and style with every job.</p>
                     <div className={styles.buttonsBox}>
-                        <Link href="/services">
-                            <button className={`${styles.ourInventory} ${styles.button}`}><span className={styles.span}>Our Services</span></button>
-                        </Link>
-
                         <Link href="/about">
                             <button className={`${styles.learnMore} ${styles.button}`}><span className={styles.span}>Learn More</span></button>
+                        </Link>
+                        
+                        <Link href="/services">
+                            <button className={`${styles.ourServices} ${styles.button}`}><span className={styles.span}>Our Services</span></button>
                         </Link>
                     </div>
                 </div>
