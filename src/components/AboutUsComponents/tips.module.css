@@ -1,0 +1,60 @@
+.tipsSection {
+  color: #f5f5f5; /* soft white */
+  padding: 40px 20px;
+  margin-top: 80px;
+}
+
+.tipsTitle {
+  font-family: "Audiowide", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 230%;
+  text-align: center;
+  margin-bottom: 25px;
+  color: black;
+  font-weight: 700;
+}
+
+.tipsList {
+  list-style: none;
+  padding: 0;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.tipItem {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 20px 18px;
+  margin-left: 10px;
+  margin-right: 10px;
+  background-color: silver;
+  margin-bottom: 12px;
+  border-radius: 8px;
+  border: 1px solid #2c2c2c;
+  color: black;
+  font-weight: 700;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.TipsSlideIn {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.tipItem:hover {
+  background-color: #222222;
+  color: white;
+}
+
+.tipDot {
+  color: gold;
+  font-size: 18px;
+  flex-shrink: 0;
+  margin-top: 2px;
+}

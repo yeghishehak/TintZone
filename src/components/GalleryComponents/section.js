@@ -1,5 +1,6 @@
 "use client";
 import { useState, useEffect } from "react";
+import { usePathname } from "next/navigation";
 import styles from "./section.module.css";
 import Image from "next/image";
 
@@ -16,6 +17,9 @@ export default function Gallery() {
   const [selected, setSelected] = useState(null);
   const [isMobile, setIsMobile] = useState(false);
 
+  const pathname = usePathname();
+  const isHome = pathname === "/";
+
   useEffect(() => {
     if (typeof window !== "undefined") {
       setIsMobile(window.innerWidth < 768);
@@ -23,7 +27,7 @@ export default function Gallery() {
   }, []);
 
   return (
-    <section className={styles.gallerySection}>
+    <section className={styles.gallerySection} style={{ padding: isHome ? "0" : "40px 20px" }}>
       <h1 className={styles.galleryText}>Gallery</h1>
       <div className={styles.galleryGrid}>
         {mediaItems.map((item, index) => (
