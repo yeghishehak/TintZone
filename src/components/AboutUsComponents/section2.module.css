@@ -128,6 +128,12 @@
     }
 }
 
+@media (max-width: 256px) {
+    .ourAdvantagesText {
+        font-size: 1.6rem;
+    }
+}
+
 @media (max-width: 288px) {
     .advantage {
         height: auto;
