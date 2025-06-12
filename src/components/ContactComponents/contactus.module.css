@@ -68,7 +68,7 @@
 .input::placeholder,
 .select::placeholder,
 .textarea::placeholder {
-    transform: translate(5px, 0);
+    transform: translate(2px, 0);
   color: #888;
 }
 

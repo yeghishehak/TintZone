@@ -89,7 +89,7 @@ export default function ContactUs() {
           <select
             name="service_type"
             defaultValue=""
-            className={styles.input}
+            className={styles.select}
             required
             onChange={(e) => setServiceType(e.target.value)}
           >
@@ -149,6 +149,7 @@ export default function ContactUs() {
             className={styles.input}
             type="date"
             name="appointment_date"
+            max={new Date().toISOString().split("T")[0]}
             required
           />
           <input
