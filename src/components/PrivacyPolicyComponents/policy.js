@@ -41,7 +41,19 @@ export default function PrivacyPolicy() {
         page with an updated date.
       </p>
 
-      <h2 className={styles.h2}>6. Contact</h2>
+      <h2 className={`${styles.h2} ${styles.credits}`}>6. Credits</h2>
+      <p className={styles.p}>
+        The following icons used on this website are licensed under the Freepik/Flaticon free license, which permits personal and commercial use with attribution. If attribution for any specific author is missing or incorrect, please contact us and we will promptly address it.
+      </p>
+
+      <p className={`${styles.creditsP} ${styles.creditsP1}`}>&quot;First Tinting Image&quot; by <a href="https://www.freepik.com/author/freepik">Freepik</a></p>
+      <p className={`${styles.creditsP} ${styles.creditsP2}`}>&quot;Quality Icon&quot; by <a href="https://www.flaticon.com/ru/authors/okta">Okta</a> from <a href="https://www.flaticon.com/">Flaticon</a></p>
+      <p className={`${styles.creditsP} ${styles.creditsP3}`}>&quot;100 icon&quot; by <a href="https://www.flaticon.com/ru/authors/freepik">Freepik</a> from <a href="https://www.flaticon.com/">Flaticon</a></p>
+      <p className={`${styles.creditsP} ${styles.creditsP4}`}>&quot;Pricing Icon&quot; by <a href="https://www.flaticon.com/ru/authors/syahrul-hidayatullah">Syahrul Hidayatullah</a> from <a href="https://www.flaticon.com/">Flaticon</a></p>
+      <p className={`${styles.creditsP} ${styles.creditsP5}`}>&quot;UV Icon&quot; by <a href="https://www.flaticon.com/ru/authors/andy-horvath">Andy Horvath</a> from <a href="https://www.flaticon.com/">Flaticon</a></p>
+      <p className={`${styles.creditsP} ${styles.creditsP6}`}>&quot;UV Icon&quot; by <a href="https://www.flaticon.com/ru/authors/vignesh-oviyan">Vignesh Oviyan</a> from <a href="https://www.flaticon.com/">Flaticon</a></p>
+
+      <h2 className={styles.h2}>7. Contact</h2>
       <p className={styles.p}>
         If you have any questions or concerns about this policy, you may contact us at:{' '}
         <a className={styles.a} href="mailto:TintZone7@gmail.com">TintZone7@gmail.com</a>

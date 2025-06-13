@@ -31,6 +31,14 @@
   margin-bottom: 1rem;
 }
 
+.creditsP {
+  line-height: 15px;
+}
+
+.creditsP1 {
+  margin-top: 30px;
+}
+
 .a {
   color: #0070f3;
   text-decoration: underline;
