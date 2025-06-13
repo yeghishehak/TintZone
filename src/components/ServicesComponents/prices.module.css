@@ -68,7 +68,7 @@
 }
 
 @media (max-width: 206px) {
-    .carbonImage {
+    .carbonImage, .ceramicImage {
         transform: translate(-7px, 0) scale(0.7);
     }
 }

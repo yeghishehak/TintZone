@@ -24,6 +24,12 @@
     }
 }
 
+@media (max-width: 216px) {
+  .faqTitle {
+    font-size: 120%;
+  }
+}
+
 
 .faqItem {
   border: 1px solid #ccc;
