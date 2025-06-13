@@ -75,6 +75,11 @@
         transform: translate(55px, 0);
     }
 
+    .footerInstagram:hover {
+        transform: translate(55px, 0) scale(1.08);
+        filter: drop-shadow(0px 0px 10px red);
+    }
+
     .contactUsTitle {
         text-align: center;
     }
