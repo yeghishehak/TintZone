@@ -56,13 +56,13 @@ export default function Section2() {
                     <div className={`${styles.advantage} ${styles.firstAdvantage}`}>
                         <Image
                             className={styles.advantageImage}
-                            src="/advantages/quality.png"
+                            src="/advantages/experience.png"
                             alt="Our Advantages"
                             width={100}
                             height={100}
                         />
-                        <h1>Professional Quality</h1>
-                        <p>We use top-tier tinting films and ensure every job is done with precision by experienced specialists.</p>
+                        <h1>Over Two Decades of Experience</h1>
+                        <p>Since 2002, our team has been delivering expert tinting services, building a strong reputation through years of hands-on experience and customer satisfaction.</p>
                     </div>
 
                     <div className={`${styles.advantage} ${styles.secondAdvantage}`}>
@@ -74,7 +74,7 @@ export default function Section2() {
                             height={100}
                         />
                         <h1>Fast & Reliable Service</h1>
-                        <p>We value your time—expect quick turnaround without compromising quality.</p>
+                        <p>We value your time—expect quick, hassle-free service with consistent results you can count on.</p>
                     </div>
 
                     <div className={`${styles.advantage} ${styles.thirdAdvantage}`}>

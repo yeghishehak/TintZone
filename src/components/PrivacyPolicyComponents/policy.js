@@ -53,6 +53,7 @@ export default function PrivacyPolicy() {
       <p className={`${styles.creditsP} ${styles.creditsP5}`}>&quot;UV Icon&quot; by <a href="https://www.flaticon.com/ru/authors/andy-horvath">Andy Horvath</a> from <a href="https://www.flaticon.com/">Flaticon</a></p>
       <p className={`${styles.creditsP} ${styles.creditsP6}`}>&quot;UV Icon&quot; by <a href="https://www.flaticon.com/ru/authors/vignesh-oviyan">Vignesh Oviyan</a> from <a href="https://www.flaticon.com/">Flaticon</a></p>
       <p className={`${styles.creditsP} ${styles.creditsP7}`}>&quot;Instagram Icon&quot; by <a href="https://www.flaticon.com/ru/authors/cobynecz">Cobynecz</a> from <a href="https://www.flaticon.com/">Flaticon</a></p>
+      <p className={`${styles.creditsP} ${styles.creditsP7}`}>&quot;Customer Exeprience Icon&quot; by <a href="https://www.flaticon.com/ru/authors/prosymbols-premium">Prosymbols Premium</a> from <a href="https://www.flaticon.com/">Flaticon</a></p>
 
       <h2 className={styles.h2}>7. Contact</h2>
       <p className={styles.p}>
