@@ -1,3 +1,4 @@
+import Background from "../components/Background/background.js"
 import Header from "../components/header"
 import Herosection from "../components/herosection"
 import Section1 from "../components/AboutUsComponents/section1"
@@ -12,6 +13,7 @@ import Contact from "../components/ContactComponents/contactus"
 export default function Home() {
   return (
     <div>
+      <Background />
       <Header />
       <Herosection />
       <Section1 />
